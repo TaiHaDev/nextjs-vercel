@@ -4,6 +4,7 @@ const nextConfig = {
       domains: ['imagedelivery.net'], // Add the hostname here
     },
     reactStrictMode: false,
+    
   };
   
 export default nextConfig;
