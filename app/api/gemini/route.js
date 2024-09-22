@@ -18,6 +18,8 @@ const project = 'anuhackathon2024';
 const location = 'australia-southeast1';
 const textModel = 'gemini-1.5-flash-001';
 const authOptions = getGCPCredentials();
+console.log('Auth Options: ', authOptions);
+
 const vertexAiOptions = {
   project: project,
   location: location,
