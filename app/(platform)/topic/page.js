@@ -192,12 +192,11 @@ export default function TopicPage() {
     const fetchQuizData = async () => {
       setIsLoading(true);
       try {
-        // const data = await callAnthropicAPI(topic);
-        // console.log(data);
-        // // const jsonData = extractJson(data.message);
-        // setTopicData(data.response);
+        const data = await callAnthropicAPI(topic);
+        console.log(data);
+        setTopicData(data.response);
         // console.log(data.response)
-        setTopicData(dummy_data);
+        // setTopicData(dummy_data);
         console.log("Done");
       } catch (error) {
         console.error("Error fetching data:", error);
